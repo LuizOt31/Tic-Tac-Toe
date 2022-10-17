@@ -1,0 +1,86 @@
+:root{
+    --light-green: #60d3aa;
+    --blue: #1fbabf;
+    --dark-blue: #0b759d;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--blue);
+}
+h1{
+    font-size: 50px;
+}
+/*Header*/
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Container Tik Tak Toe*/
+.container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.victory{
+    width: 60vh;
+    height: 5vh;
+    text-align: center;
+    font-size: 30px;
+}
+.tictacContainer{
+    width: 60vh;
+    height: 60vh;
+    background-color: var(--dark-blue);
+    display: inline-grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.tictacContainer > div{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+
+
+
+.ContainerBtnReset{
+    width: 40vh;
+    height: 10vh;
+}
+.ContainerBtnReset > button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--light-green);
+    border: none;
+    font-size: 30px;
+}
+
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
